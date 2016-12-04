@@ -1,0 +1,274 @@
+body {
+    background-color: f1f1f1;
+    font-color:#222222;
+}
+
+p {
+    font-size: 13px;
+    color:#333333;
+    font-weight: normal;
+    font-family: CharterBT-Roman;
+    src: url(fonts/CharterBT-Roman.ttf);
+}
+
+h1 {
+	size: 180px;
+    color:#ffffff;
+	text-decoration: light;
+    font-family: CharterBT-Roman;
+    src: url(fonts/CharterBT-Roman.ttf);
+}
+
+h2 {
+	font-size:29px;
+	color:#4c4cff;
+	font-weight: normal;
+    font-family: CharterBT-Roman;
+    src: url(fonts/CharterBT-Roman.ttf);
+	
+	}
+	
+h3 {
+    font-size:18px;
+    color:#4c4cff;
+    font-weight: normal;
+    font-style: italic;
+    font-family: CharterBT-Roman;
+    src: url(fonts/CharterBT-Roman.ttf);
+    }
+
+h4 {
+    size:20px;
+    text-decoration: light;
+    font-weight: normal;
+    font-family: CharterBT-Roman;
+    src: url(fonts/CharterBT-Roman.ttf);
+    }
+
+h5 {
+    size:18px;
+    color:#4c4cff;
+    font-weight: normal;
+    font-family: CharterBT-Roman;
+    src: url(fonts/CharterBT-Roman.ttf);
+    }
+
+h6 {
+    size:18px;
+    color:#828282;
+    font-weight: normal;
+    font-family: ConduitITCMedium.eot;
+    src: url(fonts/ConduitITCMedium.eot);
+    }
+
+
+#menu {
+    margin: 25px;
+    padding-right: 30px;
+    width: 800px;
+    height: 180px;
+    font-family: CharterBT-Roman;
+    src: url(fonts/CharterBT-Roman.ttf);
+    
+    }
+
+#titel {
+    margin-top: 500px;
+    width: 500px;
+    margin: 0px auto;
+    }    
+
+#proloog {
+    margin-top: 400px;
+    width: 380px;
+    margin: 0px auto;
+    }
+
+#contents {
+    margin: 25px;
+    padding-right: 30px;
+    width: 1200px;
+    font-color:white;
+    font-size:45px;
+    line-height: 250%;
+    
+
+}
+
+
+#inleidingen {
+    display: table;
+    float: left;
+    width: 800px;
+    height: 300px;
+    margin-left: 200px;
+    padding-top: 100px;
+
+
+}
+
+.inleidingentekst{
+    width: 380px;
+    float: left;
+}
+
+.voetnoten1 {
+    display: table;
+    width: 200px;
+    height: 70px;
+    position: absolute;
+    margin-left: 670px;
+    
+
+}
+
+.voetnoten2 {
+    display: table;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    margin-left: 640px;
+    margin-top: 130px;
+    
+
+}
+
+.voetnoten3 {
+    display: table;
+    background-color: red;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    margin-left: 640px;
+    padding-top: 20px;
+    
+
+}
+
+.voetnoten4 {
+    display: table;
+    background-color: red;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    margin-left: 640px;
+    margin-top: 380px;
+    
+
+}
+
+
+#images {
+    display: table;
+    width: 650px;
+    height: 500px;
+    margin: 0px auto;
+    padding-top: 140px;
+    
+
+}
+
+#plattetekst {
+    display: table;
+    width: 800px;
+    height: 300px;
+     margin-left: 100px;
+    padding-top: 70px;
+
+
+}
+
+.teksten{
+    width: 380px;
+}
+
+}
+
+
+.hoofdstuk {
+    display: table;
+    width: 300px;
+    height: 80px;
+    padding-left: 45px;
+
+    
+
+}
+
+.subkop {
+    display: table;
+    width: 300px;
+    height: 50px;
+    font-size: 16px;
+    padding-left: 45px;
+    padding-top: 45px;
+
+.floating {
+    float: left;
+    -webkit-animation-name: Floatingx;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: Floating;
+    -moz-animation-duration: 3s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+
+}
+
+
+    
+
+}
+li {
+    font-family: ConduitITCLight.otf;
+    font-weight: normal;
+    display: inline;
+    padding: 20px;20px
+}
+	 
+a:link {
+    color: #ffffff;
+    text-decoration:none;
+    font-weight: normal;
+
+}
+
+a:visited {
+    color: #ffffff;
+}
+
+/* mouse over link */
+a:hover {
+    color: #4c4cff;
+}
+
+/* selected link */
+a:active {
+    color: #4c4cff;
+}
+
+img {
+  filter: gray; /* IE6-9 */
+  filter: grayscale(1); /* Firefox 35+ */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+}
+
+/* Disable grayscale on hover */
+img:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+}
+
+.fade {
+   opacity: 1;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+   }
+
+   .fade:hover {
+      opacity: 0.5;
+      }
