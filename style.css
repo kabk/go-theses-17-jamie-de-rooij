@@ -20,7 +20,7 @@ h1 {
 }
 
 h2 {
-	font-size:29px;
+	font-size:30px;
 	color:#4c4cff;
 	font-weight: normal;
     font-family: CharterBT-Roman;
@@ -29,16 +29,15 @@ h2 {
 	}
 	
 h3 {
-    font-size:18px;
+    font-size:20px;
     color:#4c4cff;
     font-weight: normal;
-    font-style: italic;
     font-family: CharterBT-Roman;
     src: url(fonts/CharterBT-Roman.ttf);
     }
 
 h4 {
-    size:20px;
+    size:16px;
     text-decoration: light;
     font-weight: normal;
     font-family: CharterBT-Roman;
@@ -46,8 +45,9 @@ h4 {
     }
 
 h5 {
-    size:18px;
+    font-size:21px;
     color:#4c4cff;
+    font-style: italic;
     font-weight: normal;
     font-family: CharterBT-Roman;
     src: url(fonts/CharterBT-Roman.ttf);
@@ -55,12 +55,23 @@ h5 {
 
 h6 {
     size:18px;
-    color:#4c4cff;
+    color:#828282;
     font-weight: normal;
-    font-family: ConduitITCLight.eot;
-    src: url(fonts/ConduitITCLight.eot);
+    font-family: ConduitITCMedium.eot;
+    src: url(fonts/ConduitITCMedium.eot);
     }
 
+
+#loader {
+    position: static;
+    width: 700px;
+    height: 50px;
+    position: fixed;
+
+
+
+
+}
 
 #menu {
     margin: 25px;
@@ -72,6 +83,13 @@ h6 {
     
     }
 
+#header {
+    padding-top: 290px;
+    width: 500px;
+    height: 400px;
+    margin: 0px auto;
+    }  
+
 #titel {
     margin-top: 500px;
     width: 500px;
@@ -81,6 +99,7 @@ h6 {
 #proloog {
     margin-top: 400px;
     width: 380px;
+    height: 500px;
     margin: 0px auto;
     }
 
@@ -99,10 +118,10 @@ h6 {
 #inleidingen {
     display: table;
     float: left;
-    width: 800px;
-    height: 300px;
     margin-left: 200px;
     padding-top: 100px;
+
+
 
 
 }
@@ -114,28 +133,38 @@ h6 {
 
 .voetnoten1 {
     display: table;
-    background-color: yellow;
+    width: 200px;
+    height: 70px;
+    position: absolute;
+    margin-left: 670px;
+}
+    
+
+
+.voetnoten2 {
+    display: table;
     width: 200px;
     height: 50px;
     position: absolute;
-    margin-left: 670px;
+    margin-left: 640px;
+    margin-top: 130px;
     
 
 }
 
-.voetnoten2 {
+.voetnoten3 {
     display: table;
     background-color: red;
     width: 200px;
     height: 50px;
     position: absolute;
     margin-left: 640px;
-    margin-top: 80px;
+    padding-top: 0px;
     
 
 }
 
-.voetnoten3 {
+.voetnoten4 {
     display: table;
     background-color: red;
     width: 200px;
@@ -163,12 +192,44 @@ h6 {
 #images {
     display: table;
     width: 650px;
-    height: 500px;
     margin: 0px auto;
-    padding-top: 140px;
+    padding-top: 80px;
+    position: relative;
     
 
 }
+
+#images.moving {
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    top: 50px;
+    left: 50px;
+    background-color: green;
+    -webkit-transition: all 5s cubic-bezier(0.310, 0.440, 0.445, 1.650); 
+}
+
+.container:hover .moving {
+    zoom: 1.5;
+}
+
+#images .text {
+position:relative;
+width: 150px;
+bottom:270px;
+left:270px;
+visibility:hidden;
+}
+
+#images:hover .text {
+visibility:visible;
+}
+
+img:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
 
 #plattetekst {
     display: table;
@@ -192,8 +253,7 @@ h6 {
     width: 300px;
     height: 80px;
     padding-left: 45px;
-
-    
+    padding-top: 45px;
 
 }
 
@@ -230,6 +290,8 @@ li {
     display: inline;
     padding: 20px;20px
 }
+
+
 	 
 a:link {
     color: #ffffff;
@@ -274,3 +336,5 @@ img:hover {
    .fade:hover {
       opacity: 0.5;
       }
+
+
