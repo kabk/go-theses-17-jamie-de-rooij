@@ -1,7 +1,7 @@
 <html>
    <head>
       <title>Box2D DOM animation in Javascript CSS3</title>
-      <link rel="stylesheet" type="text/css" href="stylesheet.css">
+      <link rel="stylesheet" type="text/css" href="stylezwaarte.css">
 <link rel="stylesheet" href="animate.min.css">
 		<style type="text/css">
 
@@ -74,7 +74,7 @@
    </head>
 
    <body onload="setTimeout(init,2000);">
-		<canvas id="canvas" width="100" height="2500"></canvas>
+		<canvas id="canvas" width="100" height="5000"></canvas>
 
 		<div id="container">
 			
@@ -181,9 +181,8 @@
 			//Create the ground
 			var w = $(window).width(); 
 			var h = $(window).height();
-			
 
-			createBox(1910, h , w, 5, true);
+			createBox(10, h , w, 5, true);
 			createBox(0,5,5,h, true);
 			createBox(w,0,5,h, true);
 
@@ -198,7 +197,7 @@
 				var domObj = $(b);
 				var domPos = $(b).position();
 				var width = domObj.width() / 2 ;
-				var height = domObj.height() / 2500 //HOOGTE 
+				var height = domObj.height() / 10 //HOOGTE 
 				
 	            var x = (domPos.left) + width;
 	            var y = (domPos.top) + height;
