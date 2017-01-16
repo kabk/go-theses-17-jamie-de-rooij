@@ -179,8 +179,8 @@
 			});
 
 			//Create the ground
-			var w = $(window).width(); 
-			var h = $(window).height();
+			var w = $(document).width(); 
+			var h = $(document).height();
 
 			createBox(30, h , w, 5, true);
 			createBox(0,5,5,h, true);
@@ -272,8 +272,8 @@
    
 		//Keep the canvas size correct for debug drawing
 		function resizeHandler() {
-			canvas.attr('width', $(window).width());
-			canvas.attr('height', $(window).height());
+			canvas.attr('width', $(document).width());
+			canvas.attr('height', $(document).height());
 		}
    </script>
    <script type="text/javascript" src="DebugMouseDrag.js"></script>
