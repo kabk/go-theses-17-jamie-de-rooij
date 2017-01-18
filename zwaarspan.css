@@ -1,0 +1,574 @@
+/*--------------------- MAIN ---------------------*/
+
+body {
+background: rgba(219,239,255,1);
+background: -moz-linear-gradient(top, rgba(219,239,255,1) 0%, rgba(219,239,255,1) 27%, rgba(75,168,255,1) 57%, rgba(0,117,227,1) 76%, rgba(32,94,250,1) 89%, rgba(0,64,227,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(219,239,255,1)), color-stop(27%, rgba(219,239,255,1)), color-stop(57%, rgba(75,168,255,1)), color-stop(76%, rgba(0,117,227,1)), color-stop(89%, rgba(32,94,250,1)), color-stop(100%, rgba(0,64,227,1)));
+background: -webkit-linear-gradient(top, rgba(219,239,255,1) 0%, rgba(219,239,255,1) 27%, rgba(75,168,255,1) 57%, rgba(0,117,227,1) 76%, rgba(32,94,250,1) 89%, rgba(0,64,227,1) 100%);
+background: -o-linear-gradient(top, rgba(219,239,255,1) 0%, rgba(219,239,255,1) 27%, rgba(75,168,255,1) 57%, rgba(0,117,227,1) 76%, rgba(32,94,250,1) 89%, rgba(0,64,227,1) 100%);
+background: -ms-linear-gradient(top, rgba(219,239,255,1) 0%, rgba(219,239,255,1) 27%, rgba(75,168,255,1) 57%, rgba(0,117,227,1) 76%, rgba(32,94,250,1) 89%, rgba(0,64,227,1) 100%);
+background: linear-gradient(to bottom, rgba(219,239,255,1) 0%, rgba(219,239,255,1) 27%, rgba(75,168,255,1) 57%, rgba(0,117,227,1) 76%, rgba(32,94,250,1) 89%, rgba(0,64,227,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dbefff', endColorstr='#0040e3', GradientType=0 );
+}
+
+
+
+
+
+/*--------------------- TYPOGRAPHY ---------------------*/
+
+p {
+    font-size: 13px;
+    color:#000000;
+    font-weight: normal;
+    font-family: CharterBT-Roman;
+    src: url(fonts/CharterBT-Roman.ttf);
+
+}
+
+h1 {
+  size: 180px;
+    color:#ffffff;
+  text-decoration: light;
+    font-family: CharterBT-Roman;
+    src: url(fonts/CharterBT-Roman.ttf);
+}
+
+h2 {
+  font-size:36px;
+  color:#000000;
+  font-weight: normal;
+    font-family: CharterBT-Roman;
+    src: url(fonts/CharterBT-Roman.ttf);
+  
+  }
+  
+h3 {
+    font-size:20px;
+    color:#000000;
+    font-weight: normal;
+    font-family: CharterBT-Roman;
+    src: url(fonts/CharterBT-Roman.ttf);
+    }
+
+h4 {
+    size:16px;
+    text-decoration: light;
+    color:#000000;
+    font-weight: normal;
+    font-family: CharterBT-Roman;
+    src: url(fonts/CharterBT-Roman.ttf);
+    }
+
+h5 {
+    font-size:21px;
+    color:#000000;
+    font-style: italic;
+    font-weight: normal;
+    font-family: CharterBT-Roman;
+    src: url(fonts/CharterBT-Roman.ttf);
+    }
+
+h6 {
+    size:18px;
+    color:#000000;
+    font-weight: normal;
+    font-family: ConduitITCMedium.eot;
+    src: url(fonts/ConduitITCMedium.eot);
+    }
+
+
+   
+a:link {
+    color: #ffffff;
+    text-decoration:none;
+    font-weight: normal;
+
+}
+
+a:visited {
+    color: #ffffff;
+}
+
+/* mouse over link */
+a:hover {
+    color: #000000;
+}
+
+/* selected link */
+a:active {
+    color: #000000;
+}
+
+/*--------------------- HEADER + MENU ---------------------*/
+
+div {
+  {line-height: 1;}
+
+}
+}
+
+#menu {
+    margin: 25px;
+    padding-right: 30px;
+    width: 800px;
+    height: 180px;
+    font-family: CharterBT-Roman;
+    src: url(fonts/CharterBT-Roman.ttf);
+    
+    }
+
+#contents {
+    margin: 25px;
+    height: 900px;
+    padding-right: 30px;
+    width: 1000px;
+    font-color:white;
+    font-size:45px;
+    line-height: 250%;
+    
+
+}
+
+#header {
+    padding-top: 150px;
+    width: 900px;
+    height: auto;
+    margin: 0px auto;
+    }  
+
+
+#titel {
+    margin-top: 500px;
+    width: 500px;
+    margin: 0px auto;
+    }    
+
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
+
+
+/*--------------------- TEKST BLOKKEN ---------------------*/
+
+#proloog {
+    width: 380px;
+    height:500px;
+    margin: 0px auto;
+}
+
+.fl.floating {
+  position: relative;
+  display: block;
+}
+
+
+/**
+* Create Shadow.
+*
+* height: Specifies the vertical size of the shadow.
+* bottom: Specifies the distance of the shadow from the target.
+*/
+.fl.floating:after {
+  content: '';
+  width: 60%;
+  height: 14px;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  margin-left: -30%;
+}
+
+
+/**
+* The animation target.
+*
+* 0%:   Distance when moving up.
+* 100%: Distance when moving down.
+*/
+.fl.floating > * {
+  -webkit-animation: fl .5s ease-in-out 0s infinite alternate;
+          animation: fl .5s ease-in-out 0s infinite alternate;
+}
+@-webkit-keyframes fl {
+  0% { -webkit-transform: translate3d(-100,-10px,80); transform: translate3d(0,-10px,0); }
+  100% { -webkit-transform: translate3d(40,10px,40); transform: translate3d(0,10px,0); }
+}
+@keyframes fl {
+  0% { -webkit-transform: translate3d(90,-10px,0); transform: translate3d(0,-10px,0); }
+  100% { -webkit-transform: translate3d(90,10px,0); transform: translate3d(0,10px,0); }
+}
+
+
+/**
+* The animation shadow.
+*
+* 0%:   Size at the time of the move up.
+* 100%: Size at the time of the move down.
+*/
+.fl.floating:after {
+  -webkit-animation: fl-sha .5s ease-in-out 0s infinite alternate;
+          animation: fl-sha .5s ease-in-out 0s infinite alternate;
+}
+
+
+#center {
+    width: 380px;
+    margin: 0px auto;
+    }
+
+
+#left {
+    width: 380px;
+    margin: 50px 50px 50px 180px;
+    }
+
+#side {
+    width: 380px;
+    margin: 50px 50px 50px 90px;
+    }
+
+#images {
+    margin: 20px 50px 50px 180px;
+    float: left;
+    }
+#imageshide {
+    margin: 20px 50px 50px 180px;
+    float: left;
+    display: none;
+    }
+
+#citaat {
+    width: 380px;
+    margin: 0px auto;
+    }
+
+#footer {
+    width: 380px;
+    margin: 0px auto;
+    font-size: 11px;
+    }
+
+/*--------------------- KOPPEN ---------------------*/
+.hoofdstuk {
+    display: table;
+    width: auto;
+    height: 80px;
+    padding-left: 25px;
+
+
+}
+
+.subkop {
+    display: table;
+    width: 310px;
+    height: 80px;
+    padding-left: 25px;
+
+
+}
+
+/*--------------------- IMAGE EFFECTS ---------------------*/
+
+#images .text {
+position:relative;
+width: 150px;
+bottom:270px;
+left:270px;
+visibility:hidden;
+
+}
+
+#images:hover .text {
+visibility:visible;
+}
+
+
+img {
+  filter: gray; /* IE6-9 */
+  filter: grayscale(1); /* Firefox 35+ */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  opacity: 0.8;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+img:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=90); /* For IE8 and earlier */
+}
+
+.thumb{
+  display:block;
+  float:right;
+  padding-right: 15px;
+}
+
+
+
+#gewicht {
+    position: fixed;
+    left:15px;
+    top:15px;
+    width: 950px;
+    height:auto; /* or whatever value you need */
+    /* margin and padding at your discretion */
+}
+  
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+   
+}
+li {
+   display: inline;
+   margin: 0 auto 6px 20px;
+   font-size: 18px;
+   }
+
+
+
+
+span.footnote {
+  position: absolute;
+    left: 800px;
+      font-size: 9px;
+    padding-right: 40px;
+    width:200px;
+}
+
+span.footnote2 {
+  position: absolute;
+    left: 770px;
+      font-size: 9px;
+    padding-top: 45px;
+    width:200px;
+}
+
+span.footnote3 {
+  position: absolute;
+    left: 740px;
+      font-size: 9px;
+    padding-top: 130px;
+    width:200px;
+}
+
+span.footnote5 {
+  position: absolute;
+    left: 770px;
+      font-size: 9px;
+    padding-top: 80px;
+    width:200px;
+}
+
+span.footnote6 {
+  position: absolute;
+    left: 740px;
+      font-size: 9px;
+    padding-top: 125px;
+    width:200px;
+}
+
+span.footnote8 {
+  position: absolute;
+    left: 770px;
+      font-size: 9px;
+    padding-top: 70px;
+    width:200px;
+}
+
+span.footnote9 {
+  position: absolute;
+    left: 740px;
+      font-size: 9px;
+    padding-top: 130px;
+    width:200px;
+}
+
+span.footnote13 {
+  position: absolute;
+    left: 770px;
+      font-size: 9px;
+    padding-top: 35px;
+    width:170px;
+}
+
+span.footnote17 {
+  position: absolute;
+    left: 770px;
+      font-size: 9px;
+    padding-top: 50px;
+    width:200px;
+}
+
+span.footnote18 {
+  position: absolute;
+    left: 740px;
+      font-size: 9px;
+    padding-top: 125px;
+    width:200px;
+}
+
+span.footnote21 {
+  position: absolute;
+    left: 770px;
+      font-size: 9px;
+    padding-top: 50px;
+    width:200px;
+}
+
+
+span.footnote23 {
+  position: absolute;
+    left: 770px;
+      font-size: 9px;
+    padding-top: 55px;
+    width:200px;
+}
+
+span.footnote24 {
+  position: absolute;
+    left: 740px;
+      font-size: 9px;
+    padding-top: 125px;
+    width:200px;
+}
+
+span.footnote26 {
+  position: absolute;
+    left: 770px;
+      font-size: 9px;
+    padding-top: 85px;
+    width:200px;
+}
+
+P.breakhere {page-break-before: always}
+
+
+::-webkit-scrollbar
+{
+  width: 6px;  /* for vertical scrollbars */
+  height: 7px; /* for horizontal scrollbars */
+}
+
+::-webkit-scrollbar-track
+{
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb
+{
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Gradient transparent - color - transparent */
+
+
+hr{
+    color:#000000; 
+    height: 0,1px;
+}
+
+hr.noshade{
+    border: 0,3px color:#000000; 
+    height: 1px;
+}
+
+#navbar{
+  opacity:0;
+  position:fixed;
+  left:0;
+  top:0;
+  padding-left:1065px;
+  margin-top:0%;
+  margin-bottom:20%;
+  height:60%;
+  width:auto;
+  font-size:30px;
+
+  -webkit-animation: fadein 60s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 60s; /* Firefox < 16 */
+        -ms-animation: fadein 60s; /* Internet Explorer */
+         -o-animation: fadein 60s; /* Opera < 12.1 */
+            animation: fadein 60s;
+
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+.sidebar a{
+  color:black;
+  text-decoration:none;
+  line-height:95px;
+  text-align: right;
+}
+
+.sidebar span{
+  opacity:0;
+  padding-left:10px;
+  -webkit-transition:all 0.3s ease;
+  transition:all 0.3s ease;
+}
+
+.sidebar a:hover{
+  text-decoration: underline;
+}
+.sidebar a:hover span{
+  color:black;
+  display:inline;
+  opacity:1;
+  -webkit-transition:all 0.3s ease;
+  transition:all 0.3s ease;
+}
+
+.submenu a {
+}
+
+/* hover behaviour for links inside .submenu */
+.submenu a:hover {
+  text-decoration: underline;
+}
+
+/* this is the initial state of all submenus.
+  we set it to max-height: 0, and hide the overflowed content.
+*/
+.submenu {
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: all 0.5s ease-out;
+}
+
+
+
