@@ -1,135 +1,642 @@
-<HTML>
-<HEAD>
-<TITLE>Ik wil vliegen in juni</TITLE>
-
-<link rel="stylesheet" type="text/css" href="stylesheetspanhr.css">
+<html>
+   <head>
+      <title>Box2D DOM animation in Javascript CSS3</title>
 <link rel="stylesheet" href="animate.min.css">
-<meta charset="utf-8">
-
-                    <title>Ik wil vliegen in juni</title>
-                    <meta name="description" content="Hoe kan gewichtloosheid worden bereikt doormiddel van ontwerp?" />
-                    <meta property="og:title" content="Ik wil vliegen in juni" />
-                    <meta property="og:image" content="https://raw.githubusercontent.com/kabk/go-theses-17-jamie-de-rooij/master/jamiederooij.jpg"/>
-                    <meta property="dc:creator" content="Jamie de Rooij" />
-
-<meta charset="utf-8"/>
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style type="text/css">
 
 
-</HEAD>
-<style>
-@media screen and (min-width: 480px) {
-    nav {
-        width: 200px;
-        float: left;     /* This makes it float to the left of the main content */
-        margin-left: 0;
-    }
-}
-</style>
-<style>
-/* PRINTOPTIES */
+			/*--------------------- MAIN ---------------------*/
 
-@page {
-  margin-top: 2cm;
-  margin-bottom: 2cm;
-  margin-left: 1,5cm;
-  margin-right: 2cm;  
+body {
+background: rgba(219,239,255,1);
+background: -moz-linear-gradient(top, rgba(219,239,255,1) 0%, rgba(219,239,255,1) 27%, rgba(75,168,255,1) 57%, rgba(0,117,227,1) 76%, rgba(32,94,250,1) 89%, rgba(0,64,227,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(219,239,255,1)), color-stop(27%, rgba(219,239,255,1)), color-stop(57%, rgba(75,168,255,1)), color-stop(76%, rgba(0,117,227,1)), color-stop(89%, rgba(32,94,250,1)), color-stop(100%, rgba(0,64,227,1)));
+background: -webkit-linear-gradient(top, rgba(219,239,255,1) 0%, rgba(219,239,255,1) 27%, rgba(75,168,255,1) 57%, rgba(0,117,227,1) 76%, rgba(32,94,250,1) 89%, rgba(0,64,227,1) 100%);
+background: -o-linear-gradient(top, rgba(219,239,255,1) 0%, rgba(219,239,255,1) 27%, rgba(75,168,255,1) 57%, rgba(0,117,227,1) 76%, rgba(32,94,250,1) 89%, rgba(0,64,227,1) 100%);
+background: -ms-linear-gradient(top, rgba(219,239,255,1) 0%, rgba(219,239,255,1) 27%, rgba(75,168,255,1) 57%, rgba(0,117,227,1) 76%, rgba(32,94,250,1) 89%, rgba(0,64,227,1) 100%);
+background: linear-gradient(to bottom, rgba(219,239,255,1) 0%, rgba(219,239,255,1) 27%, rgba(75,168,255,1) 57%, rgba(0,117,227,1) 76%, rgba(32,94,250,1) 89%, rgba(0,64,227,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dbefff', endColorstr='#0040e3', GradientType=0 );
 }
 
+
+
+
+
+/*--------------------- TYPOGRAPHY ---------------------*/
+
+p {
+    font-size: 13px;
+    color:#000000;
+    font-weight: normal;
+    font-family: CharterBT-Roman;
+    src: url(fonts/CharterBT-Roman.ttf);
+
+}
+
+h1 {
+  size: 180px;
+    color:#ffffff;
+  text-decoration: light;
+    font-family: CharterBT-Roman;
+    src: url(fonts/CharterBT-Roman.ttf);
+}
+
+h2 {
+  font-size:36px;
+  color:#000000;
+  font-weight: normal;
+    font-family: CharterBT-Roman;
+    src: url(fonts/CharterBT-Roman.ttf);
   
-@media print {
-  body {
-
-  * {
-    color: black !important;
   }
-}
-
-
-
-@media print {
-
-
-    .no-print, .no-print *
-    {
-        display: none !important;
+  
+h3 {
+    font-size:20px;
+    color:#000000;
+    font-weight: normal;
+    font-family: CharterBT-Roman;
+    src: url(fonts/CharterBT-Roman.ttf);
     }
 
-  p {
-    font-size: 15px;
-  }
+h4 {
+    size:16px;
+    text-decoration: light;
+    color:#000000;
+    font-weight: normal;
+    font-family: CharterBT-Roman;
+    src: url(fonts/CharterBT-Roman.ttf);
+    }
+
+h5 {
+    font-size:21px;
+    color:#000000;
+    font-style: italic;
+    font-weight: normal;
+    font-family: CharterBT-Roman;
+    src: url(fonts/CharterBT-Roman.ttf);
+    }
+
+h6 {
+    size:18px;
+    color:#000000;
+    font-weight: normal;
+    font-family: ConduitITCMedium.eot;
+    src: url(fonts/ConduitITCMedium.eot);
+    }
 
 
-span {
-   font-size: 11px;
+   
+a:link {
+    color: #ffffff;
+    text-decoration:none;
+    font-weight: normal;
+
+}
+
+a:visited {
+    color: #ffffff;
+}
+
+/* mouse over link */
+a:hover {
+    color: #000000;
+}
+
+/* selected link */
+a:active {
+    color: #000000;
+}
+
+/*--------------------- HEADER + MENU ---------------------*/
+
+div {
+  {line-height: 1;}
 
 }
 }
-@media print {
 
-    hr{
-    border: 0,7 color:#000000; 
+#menu {
+    margin: 25px;
+    padding-right: 30px;
+    width: 800px;
+    height: 180px;
+    font-family: CharterBT-Roman;
+    src: url(fonts/CharterBT-Roman.ttf);
+    
+    }
+
+#contents {
+    margin: 25px;
+    height: 900px;
+    padding-right: 30px;
+    width: 1000px;
+    font-color:white;
+    font-size:45px;
+    line-height: 250%;
+    
+
+}
+
+#header {
+    padding-top: 150px;
+    width: 900px;
+    height: 670px;
+    margin: 0px auto;
+    }  
+
+
+#titel {
+    margin-top: 500px;
+    width: 500px;
+    margin: 0px auto;
+    }    
+
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
+
+
+/*--------------------- TEKST BLOKKEN ---------------------*/
+
+#proloog {
+    width: 380px;
+    height:500px;
+    margin: 0px auto;
+}
+
+.fl.floating {
+  position: relative;
+  display: block;
+}
+
+
+/**
+* Create Shadow.
+*
+* height: Specifies the vertical size of the shadow.
+* bottom: Specifies the distance of the shadow from the target.
+*/
+.fl.floating:after {
+  content: '';
+  width: 60%;
+  height: 14px;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  margin-left: -30%;
+}
+
+
+/**
+* The animation target.
+*
+* 0%:   Distance when moving up.
+* 100%: Distance when moving down.
+*/
+.fl.floating > * {
+  -webkit-animation: fl .5s ease-in-out 0s infinite alternate;
+          animation: fl .5s ease-in-out 0s infinite alternate;
+}
+@-webkit-keyframes fl {
+  0% { -webkit-transform: translate3d(-100,-10px,80); transform: translate3d(0,-10px,0); }
+  100% { -webkit-transform: translate3d(40,10px,40); transform: translate3d(0,10px,0); }
+}
+@keyframes fl {
+  0% { -webkit-transform: translate3d(90,-10px,0); transform: translate3d(0,-10px,0); }
+  100% { -webkit-transform: translate3d(90,10px,0); transform: translate3d(0,10px,0); }
+}
+
+
+/**
+* The animation shadow.
+*
+* 0%:   Size at the time of the move up.
+* 100%: Size at the time of the move down.
+*/
+.fl.floating:after {
+  -webkit-animation: fl-sha .5s ease-in-out 0s infinite alternate;
+          animation: fl-sha .5s ease-in-out 0s infinite alternate;
+}
+
+
+#center {
+    width: 380px;
+    margin: 0px auto;
+    }
+
+
+#left {
+    width: 380px;
+    margin: 50px 50px 50px 180px;
+    }
+
+#side {
+    width: 380px;
+    margin: 50px 50px 50px 90px;
+    }
+
+#images {
+    margin: 20px 50px 50px 180px;
+    float: left;
+    }
+#imageshide {
+    margin: 20px 50px 50px 180px;
+    float: left;
+    display: none;
+    }
+
+#citaat {
+    width: 380px;
+    margin: 0px auto;
+    }
+
+#footer {
+    width: 380px;
+    margin: 0px auto;
+    font-size: 11px;
+    }
+
+/*--------------------- KOPPEN ---------------------*/
+.hoofdstuk {
+    display: table;
+    width: auto;
+    height: 80px;
+    padding-left: 25px;
+
+
+}
+
+.subkop {
+    display: table;
+    width: 310px;
+    height: 80px;
+    padding-left: 25px;
+
+
+}
+
+/*--------------------- IMAGE EFFECTS ---------------------*/
+
+#images .text {
+position:relative;
+width: 150px;
+bottom:270px;
+left:270px;
+visibility:hidden;
+
+}
+
+#images:hover .text {
+visibility:visible;
+}
+
+
+img {
+  filter: gray; /* IE6-9 */
+  filter: grayscale(1); /* Firefox 35+ */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  opacity: 0.8;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+img:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=90); /* For IE8 and earlier */
+}
+
+.thumb{
+  display:block;
+  float:right;
+  padding-right: 15px;
+}
+
+
+
+#gewicht {
+    position: fixed;
+    left:15px;
+    top:15px;
+    width: 950px;
+    height:auto; /* or whatever value you need */
+    /* margin and padding at your discretion */
+}
+  
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
    
 }
-   #imageshide {display: block; margin-top: 0px;}
-          
-  }
-
-</style>
-
-<script type="text/javascript"></script>
-
-
-<script type="text/javascript" src="jquery-1.7.1.min.js"></script>
-   <script type="text/javascript" src="RequestAnimationFrame.js"></script>
-   <script type="text/javascript" src="MouseAndTouch.js"></script>
-
-   <script src=scroll.min.js></script>
-
-
-<script>
-$(document).ready(function() {
-
-  /* Every time the window is scrolled ... */
-  $(window).scroll( function(){
-
-    /* Check the location of each desired element */
-    $('#navbar, .part').each( function(i){
-
-      var bottom_of_object = $(this).position().top + $(this).outerHeight();
-      var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-      /* If the object is completely visible in the window, fade it it */
-      if( bottom_of_window > bottom_of_object ){
-
-        $(this).animate({'opacity':'1'},700);
-
-      }
-    });
-  });
-});
-</script>
-
-
-<script>
-$(window).on('resize', function() {
-  winHeight = $(window).height(),
-  docHeight = $(document).height();
-
-  max = docHeight - winHeight;
-  progressBar.attr('max', max);
-
-  value =  $(window).scrollTop();
-  progressBar.attr('value', value);
-});
-</script>
+li {
+   display: inline;
+   margin: 0 auto 6px 20px;
+   font-size: 18px;
+   }
 
 
 
-<BODY>
+
+span.footnote {
+  position: absolute;
+    left: 800px;
+      font-size: 9px;
+    padding-right: 40px;
+    width:200px;
+}
+
+span.footnote2 {
+  position: absolute;
+    left: 770px;
+      font-size: 9px;
+    padding-top: 45px;
+    width:200px;
+}
+
+span.footnote3 {
+  position: absolute;
+    left: 740px;
+      font-size: 9px;
+    padding-top: 130px;
+    width:200px;
+}
+
+span.footnote5 {
+  position: absolute;
+    left: 770px;
+      font-size: 9px;
+    padding-top: 80px;
+    width:200px;
+}
+
+span.footnote6 {
+  position: absolute;
+    left: 740px;
+      font-size: 9px;
+    padding-top: 125px;
+    width:200px;
+}
+
+span.footnote8 {
+  position: absolute;
+    left: 770px;
+      font-size: 9px;
+    padding-top: 70px;
+    width:200px;
+}
+
+span.footnote9 {
+  position: absolute;
+    left: 740px;
+      font-size: 9px;
+    padding-top: 130px;
+    width:200px;
+}
+
+span.footnote13 {
+  position: absolute;
+    left: 770px;
+      font-size: 9px;
+    padding-top: 35px;
+    width:170px;
+}
+
+span.footnote17 {
+  position: absolute;
+    left: 770px;
+      font-size: 9px;
+    padding-top: 50px;
+    width:200px;
+}
+
+span.footnote18 {
+  position: absolute;
+    left: 740px;
+      font-size: 9px;
+    padding-top: 125px;
+    width:200px;
+}
+
+span.footnote21 {
+  position: absolute;
+    left: 770px;
+      font-size: 9px;
+    padding-top: 50px;
+    width:200px;
+}
 
 
+span.footnote23 {
+  position: absolute;
+    left: 770px;
+      font-size: 9px;
+    padding-top: 55px;
+    width:200px;
+}
+
+span.footnote24 {
+  position: absolute;
+    left: 740px;
+      font-size: 9px;
+    padding-top: 125px;
+    width:200px;
+}
+
+span.footnote26 {
+  position: absolute;
+    left: 770px;
+      font-size: 9px;
+    padding-top: 85px;
+    width:200px;
+}
+
+P.breakhere {page-break-before: always}
+
+
+::-webkit-scrollbar
+{
+  width: 6px;  /* for vertical scrollbars */
+  height: 7px; /* for horizontal scrollbars */
+}
+
+::-webkit-scrollbar-track
+{
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb
+{
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Gradient transparent - color - transparent */
+
+
+hr{
+    color:#000000; 
+    height: 0,1px;
+}
+
+hr.noshade{
+    border: 0,3px color:#000000; 
+    height: 1px;
+}
+
+#navbar{
+  opacity:0;
+  position:fixed;
+  left:0;
+  top:0;
+  padding-left:1065px;
+  margin-top:0%;
+  margin-bottom:20%;
+  height:60%;
+  width:auto;
+  font-size:30px;
+
+  -webkit-animation: fadein 60s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 60s; /* Firefox < 16 */
+        -ms-animation: fadein 60s; /* Internet Explorer */
+         -o-animation: fadein 60s; /* Opera < 12.1 */
+            animation: fadein 60s;
+
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+.sidebar a{
+  color:black;
+  text-decoration:none;
+  line-height:95px;
+  text-align: right;
+}
+
+.sidebar span{
+  opacity:0;
+  padding-left:10px;
+  -webkit-transition:all 0.3s ease;
+  transition:all 0.3s ease;
+}
+
+.sidebar a:hover{
+  text-decoration: underline;
+}
+.sidebar a:hover span{
+  color:black;
+  display:inline;
+  opacity:1;
+  -webkit-transition:all 0.3s ease;
+  transition:all 0.3s ease;
+}
+
+.submenu a {
+}
+
+/* hover behaviour for links inside .submenu */
+.submenu a:hover {
+  text-decoration: underline;
+}
+
+/* this is the initial state of all submenus.
+  we set it to max-height: 0, and hide the overflowed content.
+*/
+.submenu {
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: all 0.5s ease-out;
+}
+
+
+
+
+
+			/* Set translateZ to trigger HW acc for CSS3 transforms */
+			#container {
+				position: absolute;
+				left: 0;
+				top: 0;
+				-webkit-transform: translate3d(0,0,1px);
+				-o-transform: translate3d(0,0,1px);
+				-moz-transform: translate3d(0,0,1px);
+				-ms-transform: translate3d(0,0,1px);
+				transform: translate3d(0,0,1px);
+				-webkit-perspective: 1000; 
+				-webkit-backface-visibility: hidden;
+			}
+
+			#container {
+				-webkit-transition-property: -webkit-transform;
+				-webkit-transition-duration: 0.1;
+			}
+
+			/* Styles for the experiment GUI */
+			
+			@media screen and (max-width: 600px) {
+				.panel {
+					width:250px;
+					font-size:10px;
+				}
+			}
+
+
+			/* Styles for illustrating the example */
+			a {
+				color:#FFF;
+				text-decoration:underline;
+			}
+
+		
+				/* border: 1px solid #FFF; */
+			}
+		</style>
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-745050-1']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
+   </head>
+
+   <body onload="setTimeout(init,2000);">
+		<canvas id="canvas" width="100" height="100"></canvas>
 
 
 <div id="navbar" class="no-print">
@@ -150,7 +657,7 @@ $(window).on('resize', function() {
 
   <li><a href="zwaarte.html"><u>Zwaarte</u></a></li>
   <li><a href="about.html"><u>Gewichtloos</u></A></li>
-  <li><a href="about.html"> <u>Licht</a></u></li>
+  <li><a href="javascript:window.print()"> <u>Licht</a></u></li>
 </div>
 
 
@@ -1238,7 +1745,7 @@ Mijn scriptie is het begin van een ontdekkingsreis door allerlei mogelijkheden v
 
 <div id="center">
 <p>
-Ik wil graag iedereen bedanken die mij heeft geholpen tijdens het tot stand komen van mijn scriptie. Dat zijn Marjan Brandsma, Michel Hoogervorst en Dirk Vis met wie ik wekelijks inspirerende gesprekken had. Voor de rest wil ik de klasgenoten bedanken voor het meedenken. Ik wil ook graag Kelly Langenberg lezen voor het herhaardelijk lezen en controleren van mijn scriptie.</p>
+Ik wil graag iedereen bedanken die mij heeft geholpen tijdens het tot stand komen van mijn scriptie. Dat zijn Marjan Brandsma, Michel Hoogervorst en Dirk Vis met wie ik wekelijks inspirerende gesprekken had. Voor de rest wil ik de klasgenoten bedanken voor het meedenken. Ik wil ook graag Kelly Langenberg bedanken voor het herhaardelijk lezen en controleren van mijn scriptie.</p>
 </div>
 
   <P CLASS="breakhere">
@@ -1327,9 +1834,196 @@ Human Birdsongs, “Human Birdsongs: building a semi human powered flying device
 </div>
 </div>
 
+			
 
 
 
+  <!--TITEL-->
 
-  </BODY>
-</HTML>
+
+
+   <script type="text/javascript" src="Box2dWeb-2.1.a.3.js"></script>
+   <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+   <script type="text/javascript" src="RequestAnimationFrame.js"></script>
+   <script type="text/javascript" src="MouseAndTouch.js"></script>
+
+   <script type="text/javascript">
+   		// Keep a reference to the Box2D World
+		var world;
+
+		// The scale between Box2D units and pixels
+		var SCALE = 30;
+
+		// Multiply to convert degrees to radians.
+		var D2R = Math.PI / 180;
+
+		// Multiply to convert radians to degrees.
+		var R2D = 180 / Math.PI;
+
+		// 360 degrees in radians.
+		var PI2 = Math.PI * 2;
+		var interval;
+
+		//Cache the canvas DOM reference
+		var canvas;
+
+		//Are we debug drawing
+		var debug = false;
+
+		// Shorthand "imports"
+		var b2Vec2 = Box2D.Common.Math.b2Vec2,
+			b2BodyDef = Box2D.Dynamics.b2BodyDef,
+			b2AABB = Box2D.Collision.b2AABB,
+			b2Body = Box2D.Dynamics.b2Body,
+			b2FixtureDef = Box2D.Dynamics.b2FixtureDef,
+			b2Fixture = Box2D.Dynamics.b2Fixture,
+			b2World = Box2D.Dynamics.b2World,
+			b2MassData = Box2D.Collision.Shapes.b2MassData,
+			b2PolygonShape = Box2D.Collision.Shapes.b2PolygonShape,
+			b2CircleShape = Box2D.Collision.Shapes.b2CircleShape,
+			b2DebugDraw = Box2D.Dynamics.b2DebugDraw,
+			b2MouseJointDef =  Box2D.Dynamics.Joints.b2MouseJointDef,
+			b2EdgeShape = Box2D.Collision.Shapes.b2EdgeShape;
+
+		function init() {
+
+			//Create the Box2D World with horisontal and vertical gravity (10 is close enough to 9.8)
+			world = new b2World(
+			new b2Vec2(0, 10) //gravity
+			, true //allow sleep
+			);
+
+			//setup debug draw
+			var debugDraw = new b2DebugDraw();
+			canvas = $("#canvas");
+			debugDraw.SetSprite(canvas[0].getContext("2d"));
+			debugDraw.SetDrawScale(SCALE);
+			debugDraw.SetFillAlpha(0.3);
+			debugDraw.SetLineThickness(1.0);
+			debugDraw.SetFlags(b2DebugDraw.e_shapeBit | b2DebugDraw.e_jointBit);
+			world.SetDebugDraw(debugDraw);
+
+			//Create DOB OBjects
+			createDOMObjects();
+
+			
+
+			//Simple solution; reload to reset
+			$("#resetButton").click(function() {
+				document.location.reload();
+			});
+
+			$("#debugDraw").click(function () {
+				if ($("#debugDraw:checked").val()) {
+					debug = true;
+				} else {
+					debug = false;
+					canvas.width = canvas.width;
+				}
+				$("article").animate({opacity:debug ? 0.2 : 1},1000);
+			})
+
+			$("#removeText").click(function() {
+				$(".panel p").hide()
+			});
+
+			//Create the ground
+			var w = $(document).width(); 
+			var h = $(document).height();
+
+			createBox(100, h , w, 5, true);
+			createBox(0,5,5,h, true);
+			createBox(w,0,5,h, true);
+
+			//Do one animation interation and start animating
+			interval = setInterval(update,1000/60);
+			update();
+		}
+
+		function createDOMObjects() {
+			//iterate all div elements and create them in the Box2D system
+			$("#container div").each(function (a,b) {
+				var domObj = $(b);
+				var domPos = $(b).position();
+				var width = domObj.width() / 2 ;
+				var height = domObj.height() / 10 //HOOGTE 
+				
+	            var x = (domPos.left) + width;
+	            var y = (domPos.top) + height;
+	            var body = createBox(x,y,width,height);
+				body.m_userData = {domObj:domObj, width:width, height:height};
+				
+				//Reset DOM object position for use with CSS3 positioning
+				domObj.css({'left':'0px', 'top':'0px'});
+			});
+		}
+
+		function createBox(x,y,width,height, static) {
+			var bodyDef = new b2BodyDef;
+			bodyDef.type = static ? b2Body.b2_staticBody : b2Body.b2_dynamicBody;
+			bodyDef.position.x = x / SCALE;
+			bodyDef.position.y = y / SCALE
+
+			var fixDef = new b2FixtureDef;
+         	fixDef.density = 1.5;
+         	fixDef.friction = 0.3;
+         	fixDef.restitution = 0.4;
+
+			fixDef.shape = new b2PolygonShape;
+			fixDef.shape.SetAsBox(width / SCALE, height / SCALE);
+			return world.CreateBody(bodyDef).CreateFixture(fixDef);
+		}
+
+		//Animate DOM objects
+		function drawDOMObjects() {
+			var i = 0;
+			for (var b = world.m_bodyList; b; b = b.m_next) {
+		         for (var f = b.m_fixtureList; f; f = f.m_next) {
+						if (f.m_userData) {
+							//Retrieve positions and rotations from the Box2d world
+							var x = Math.floor((f.m_body.m_xf.position.x * SCALE) - f.m_userData.width);
+							var y = Math.floor((f.m_body.m_xf.position.y * SCALE) - f.m_userData.height);
+
+							//CSS3 transform does not like negative values or infitate decimals
+							var r = Math.round(((f.m_body.m_sweep.a + PI2) % PI2) * R2D * 100) / 100;
+
+							var css = {'-webkit-transform':'translate(' + x + 'px,' + y + 'px) rotate(' + r  + 'deg)', '-moz-transform':'translate(' + x + 'px,' + y + 'px) rotate(' + r  + 'deg)', '-ms-transform':'translate(' + x + 'px,' + y + 'px) rotate(' + r  + 'deg)'  , '-o-transform':'translate(' + x + 'px,' + y + 'px) rotate(' + r  + 'deg)', 'transform':'translate(' + x + 'px,' + y + 'px) rotate(' + r  + 'deg)'};
+
+							f.m_userData.domObj.css(css);
+						}
+		         }
+		      }
+		};
+
+		//Method for animating
+		function update() {
+			//I tried to use this cross browser animation snippet from Paul Irish, but it killed the performance/timing.
+			//Ill have to look more at it later, when I have the time.
+			//requestAnimFrame(update);
+
+			updateMouseDrag();
+
+			world.Step(
+			1 / 60 //frame-rate
+			, 10 //velocity iterations
+			, 10 //position iterations
+			);
+
+			//If you experience strange results, enable the debug drawing
+			if (debug) {
+				world.DrawDebugData();
+			}
+
+			drawDOMObjects();
+
+			world.ClearForces();
+		}
+   
+		//Keep the canvas size correct for debug drawing
+		function resizeHandler() {
+			canvas.attr('width', $(ground).width());
+			canvas.attr('height', $(ground).height());
+		}
+   </script>
+   <script type="text/javascript" src="DebugMouseDrag.js"></script>
+</html>
